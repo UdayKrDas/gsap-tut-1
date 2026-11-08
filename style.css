@@ -5,6 +5,10 @@
     font-family: 'Gilroy';
 
 }
+*::selection{
+    color:#fff;
+    background-color: black;
+}
 
 html, body {
     height: 100%;
