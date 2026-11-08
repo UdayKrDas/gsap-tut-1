@@ -1,4 +1,5 @@
-let vidcon = document.querySelector("#video-container")
+function videoconAnimation() {
+    let vidcon = document.querySelector("#video-container")
 let playbtn = document.querySelector('#play')
 
 vidcon.addEventListener("mouseenter", function(){
@@ -21,3 +22,6 @@ vidcon.addEventListener("mousemove", function(dets){
         top: dets.y -20
     })
 })
+}
+
+videoconAnimation()
