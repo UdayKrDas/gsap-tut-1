@@ -15,6 +15,10 @@ html, body {
     width: 100%;
 }
 
+body{
+    background-color: #F7F7F7;
+}
+
 #page1{
     min-height: 100vh;
     /* background-color: aqua; */
@@ -103,9 +107,27 @@ html, body {
 }
 
 #page3 {
-    height: 100vh;
+    min-height: 120vh;
     width: 100%;
-    background-color: #F7F7F7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child{
+    height: 54vh;
+    width: 38vw;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img{
+    height: 100%;
 }
 
 @media (max-width: 600px) {
