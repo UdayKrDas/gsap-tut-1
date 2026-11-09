@@ -1,3 +1,9 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
+
 function videoconAnimation() {
     let vidcon = document.querySelector("#video-container")
 let playbtn = document.querySelector('#play')
