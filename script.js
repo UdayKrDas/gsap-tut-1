@@ -38,6 +38,51 @@ ScrollTrigger.refresh();
 locomotiveAnimations()
 
 
+function navbarAnimation(){
+    gsap.to("#nav-part-1 #logo", {
+    transform: "translateY(-60%)",
+    scrollTrigger: {
+        trigger: "#page1",
+        scroller: "#main",
+        start: "top 0",
+        end: "top -5%",
+        scrub: 2,
+    }
+})
+
+gsap.to("#nav-part-2 #links", {
+    transform: "translateY(-100%)",
+    opacity: 0,
+    scrollTrigger: {
+        trigger: "#page1",
+        scroller: "#main",
+        start: "top 0",
+        end: "top -5%",
+        scrub: 2,
+    }
+})
+
+gsap.to("#nav", {
+    backgroundColor: "rgba(255, 255, 255, 0.4)",
+    width: "80%",
+    transform: "translate(10vw, 2vw)",
+    left: "5vw",
+    padding: "5px, 10px",
+    backdropFilter: "blur(5px)", 
+    borderRadius: "15px",
+    border: "1px solid white",
+    scrollTrigger: {
+        trigger: "#page1",
+        scroller: "#main",
+        start: "top 0",
+        end: "top -5%",
+        scrub: 2,
+    }
+})
+}
+navbarAnimation()
+
+
 function videoconAnimation(){
     let vidcon = document.querySelector("#video-container")
 let playbtn = document.querySelector('#play')
