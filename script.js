@@ -50,3 +50,29 @@ gsap.from("#page1 #video-container", {
 }
 
 loadinganimation()
+
+document.addEventListener("mousemove", function(dets){
+    gsap.to("#cursor", {
+        left: dets.x,
+        top: dets.y
+    })
+})
+
+document.querySelectorAll(".child").forEach(function(e){
+    e.addEventListener("mouseenter", function(){
+    gsap.to("#cursor", {
+        transform:' translate(-50%, -50%) scale(1)'
+        
+    })
+})
+
+    e.addEventListener("mouseleave", function(){
+    gsap.to("#cursor", {
+        transform:' translate(-50%, -50%) scale(0)'
+        
+    })
+})
+
+
+})
+
