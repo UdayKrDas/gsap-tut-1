@@ -19,6 +19,69 @@ body{
     background-color: #F7F7F7;
 }
 
+
+#nav {
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    padding: 20px;display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#nav-part-1 {
+    /* background-color: red; */
+    height: 80px;
+    overflow: hidden;
+}
+
+#nav-part-1 h1{
+    font-size: 18px;
+    font-family: poppins;
+    
+}
+
+#nav-part-1 h2{
+    font-size: 12px;
+    font-family: poppins;
+    
+}
+
+#nav #nav-part-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#nav-part-2 #links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+#icon {
+    padding: 10px;
+}
+
+#nav-part-2 #icon {
+    background-color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3.8px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 #cursor{
     height: 150px;
     width: 150px;
